@@ -40,18 +40,15 @@ router.put('/workouts/:id', (req, res) => {
 })
 
 // Create workout
-router.post('/workouts/ran321312ge', (req, res) => {
-    Workout.aggregate([{
-        $addFields:{
-            totalDuration:{
-                $sum:"$exercises.duration"
-            }
-        }
-    }]).limit(7)
+router.post('/workouts', (req, res) => {
+    Workout.create(req.body)
     .then(workoutData => {
         res.json(workoutData)
     })
-})
+    .catch(err => {
+        res.status(400).json(err);
+    });
+});
 
 
 
