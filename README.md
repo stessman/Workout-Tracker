@@ -27,4 +27,4 @@ Once this is done you should be good to go.
 ## Usage Information
 Firstly verify that all installation instructions are completed. Open the terminal at the top level of the project and run 'npm start' to start the server. The user is able to a create workouts and also add exercises to workouts. Users are able to create resistance or cardio exercises. Users are also able to view workouts for previous days.
 
-Link to app usage video: [Workout Tracker](https://calm-crag-87567.herokuapp.com/)
+Link to app usage video: [Workout Tracker](https://shielded-bayou-98170.herokuapp.com/)
